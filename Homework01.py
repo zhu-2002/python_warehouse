@@ -70,5 +70,3 @@ def largest_factor(n):
         if n%m == 0 :
             return m ;
         m -= 1
-
-print('was')
