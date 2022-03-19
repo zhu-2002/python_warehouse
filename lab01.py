@@ -32,7 +32,12 @@ def sum_digits(y):
     6
     """
     "*** YOUR CODE HERE ***"
-
+    re = 0
+    while y > 0 :
+        tmp = y%10
+        re += tmp
+        y //= 10
+    return re
 
 def double_eights(n):
     """Return true if n has two eights in a row.
