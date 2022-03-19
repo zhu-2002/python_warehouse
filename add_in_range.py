@@ -6,3 +6,8 @@ def add_in_range(start, stop):
     55
     """
     "*** YOUR CODE HERE ***"
+    sum = 0
+    while stop >= start :
+        sum += start
+        start += 1
+    return sum
