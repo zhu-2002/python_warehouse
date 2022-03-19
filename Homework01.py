@@ -1,5 +1,4 @@
 import operator as op
-
 #2
 def k_in_num(k, num):
     """
@@ -15,7 +14,7 @@ def k_in_num(k, num):
     >>> k_in_num(0, 0) # .Case 4
     False
     """
-    while num:
+    while num > 0 :
         if k == num % 10:
             return True
         num = num // 10
@@ -61,8 +60,8 @@ def largest_factor(n):
     5
     >>> largest_factor(80) # factors are 1, 2, 4, 5, 8, 10, 16, 20, 40
     40
-    >>> largest_factor(13) # factor is 1 since 13 is prime
-    1
+    >>> largest_factor(-1) # factor is 1 since 13 is prime
+    -1
     """
     "*** YOUR CODE HERE ***"
     m = n - 1
@@ -70,3 +69,5 @@ def largest_factor(n):
         if n%m == 0 :
             return m ;
         m -= 1
+    return -1
+

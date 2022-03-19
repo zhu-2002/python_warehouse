@@ -8,6 +8,5 @@ def price( unitprice ) :
     return computer
 apple = price(3)
 print(apple(10.1))
-
-banana = price(5)
+price(5)
 print(banana(10.1))
