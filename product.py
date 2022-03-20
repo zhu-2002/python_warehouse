@@ -1,3 +1,13 @@
+from operator import add
+from operator import mul
+def identity(n):
+    return n
+def square(n):
+    return n**2
+def increment(n):
+    return n+1
+def triple(n):
+    return n*3
 def product(n, term):
     """Return the product of the first n terms in a sequence.
 
