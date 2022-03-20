@@ -1,3 +1,13 @@
+from operator import add
+from operator import mul
+def identity(n):
+    return n
+def square(n):
+    return n**2
+def increment(n):
+    return n+1
+def triple(n):
+    return n*3
 def accumulate(merger, start, n, term):
     """Return the result of merging the first n terms in a sequence and start.
     The terms to be merged are term(1), term(2), ..., term(n). merger is a
@@ -23,3 +33,9 @@ def accumulate(merger, start, n, term):
     16
     """
     "*** YOUR CODE HERE ***"
+    sum = start
+    k = 0
+    while k < n:
+        k += 1
+        sum = merger(sum, term(k))
+    return sum
