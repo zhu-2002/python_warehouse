@@ -18,3 +18,9 @@ def product(n, term):
     162
     """
     "*** YOUR CODE HERE ***"
+    k=0
+    sum=1
+    while k<n:
+        k+=1
+        sum=sum*term(k)
+    return sum
